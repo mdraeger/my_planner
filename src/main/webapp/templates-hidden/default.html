@@ -27,28 +27,10 @@
             <h1>Little scheduler for different training events</h1>
         </div>
         <div class="span-18 prepend-6" id="main_navigation">
-           <ul>
-              <li><a href="#">Milk</a></li>
-              <li><a href="#">Eggs</a></li>
-              <li><a href="#">Cheese</a></li>
-              <li><a href="#">Vegetables</a></li>
-              <li><a href="#">Fruit</a></li>
-           </ul>
+           <lift:Menu.builder li:class="" li_item:class="selected" ul:class=""/>
         </div>
         <div class="span-6" id="navigation">
-           <ul>
-              <li>
-                <a href="#">Milk</a>
-                <ul>
-                   <li><a href=#">fat-free</a></li>
-                   <li><a href=#">full fat</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Eggs</a></li>
-              <li><a href="#">Cheese</a></li>
-              <li><a href="#">Vegetables</a></li>
-              <li><a href="#">Fruit</a></li>
-           </ul>
+           <lift:Menu.builder li:class="" li_item:class="selected" ul:class=""/>
         </div>
         <div class="span-18 last" id="main_content">
            <h1>main content</h1>
@@ -58,11 +40,9 @@
         </div>
         <div class="span-18 last" id="footer">
            <ul>
-              <li><a href="#">Milk</a></li>
-              <li><a href="#">Eggs</a></li>
-              <li><a href="#">Cheese</a></li>
-              <li><a href="#">Vegetables</a></li>
-              <li><a href="#">Fruit</a></li>
+	      <lift:Menu.group group="footer">
+	         <li><menu:bind /></li>
+	      </lift:Menu.group>
            </ul>
         </div>
       </div>

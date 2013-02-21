@@ -1,7 +1,8 @@
 package bootstrap.liftweb
 
 import net.liftweb.http._
-import net.liftweb.sitemap.{Menu, SiteMap}
+import net.liftweb.sitemap.{Menu, SiteMap, Loc}
+import net.liftweb.sitemap.Loc._
 import net.liftweb.squerylrecord.SquerylRecord
 import net.liftweb.squerylrecord.RecordTypeMode._
 import net.liftweb.util.LoanWrapper
@@ -37,9 +38,14 @@ class Boot {
 
     // Build SiteMap
     def sitemap(): SiteMap = SiteMap(
-      Menu.i("Home") / "index"
-      )
+                    Menu.i("Home") / "index",
+                    Menu.i("Info") / "info" submenus(
+                      Menu.i("About") / "about" >> Hidden >> LocGroup("footer"),
+                      Menu.i("Contact") / "contact" >> Hidden >> LocGroup("footer"),
+                      Menu.i("Feedback") / "feedback" >> Hidden >> LocGroup("footer"))
+		    )
 
+    LiftRules.setSiteMapFunc(() => sitemap())
     // Use HTML5 for rendering
     LiftRules.htmlProperties.default.set((r:
       Req) => new

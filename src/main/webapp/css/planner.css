@@ -23,6 +23,13 @@
    display: inline;
 }
 
+#main_navigation ul li.selected{
+   color: #fff;
+   text-decoration: none;
+   padding: .2em 1.5em;
+   background-color:#888;
+}
+
 #main_navigation ul li a{
    color: #fff;
    text-decoration: none;

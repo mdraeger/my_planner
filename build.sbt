@@ -14,6 +14,7 @@ libraryDependencies ++= {
     "net.liftweb" %% "lift-webkit" % liftVersion % "compile",
     "org.eclipse.jetty" % "jetty-webapp" % "8.0.4.v20111024" %
 "container,test",
+    "ch.qos.logback" % "logback-classic" % "0.9.28",
     "net.liftweb" %% "lift-squeryl-record" % liftVersion
   )
 }
