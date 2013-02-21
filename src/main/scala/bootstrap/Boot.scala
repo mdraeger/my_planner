@@ -1,7 +1,5 @@
 package bootstrap.liftweb
 
-import ch.qos.logback._
-
 import net.liftweb.http._
 import net.liftweb.sitemap.{Menu, SiteMap}
 import net.liftweb.squerylrecord.SquerylRecord
