@@ -9,6 +9,11 @@
    text-align:center;
 }
 
+#main_content h1 {
+   font-size:24px;
+   padding-top:8px;
+}
+
 #main_navigation {
    background-color:#bbb;
 }
@@ -23,7 +28,7 @@
    display: inline;
 }
 
-#main_navigation ul li.selected{
+#main_navigation ul li#selected{
    color: #fff;
    text-decoration: none;
    padding: .2em 1.5em;
@@ -64,6 +69,14 @@
    list-style-type:none;
 }
 
+#navigation ul li#selected {
+   text-decoration:none;
+   color:#ddd;
+   background-color:#888;
+   padding-left:10px;
+   width:9em;
+}
+
 #navigation a {
    text-decoration:none;
    color:#555;
@@ -82,6 +95,17 @@
    border-top:1px;
    border-style:solid;
    border-color:#555;
+   padding-left:3em;
+   padding-bottom:1em;
+   padding-top:.5em;
+   margin-left:-3em;
+}
+
+#date_time p {
+   margin:0;
+   padding:0;
+   margin-left:-2em;
+   text-align:center;
 }
 
 #footer {

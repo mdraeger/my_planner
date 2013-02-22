@@ -39,7 +39,7 @@ class Boot {
     // Build SiteMap
     def sitemap(): SiteMap = SiteMap(
                     Menu.i("Home") / "index",
-                    Menu.i("Info") / "info" submenus(
+                    Menu.i("Info") / "many_to_many" submenus(
                       Menu.i("About") / "about" >> Hidden >> LocGroup("footer"),
                       Menu.i("Contact") / "contact" >> Hidden >> LocGroup("footer"),
                       Menu.i("Feedback") / "feedback" >> Hidden >> LocGroup("footer"))

@@ -26,19 +26,21 @@
          <div class="span-24" id="header">
             <h1>Little scheduler for different training events</h1>
         </div>
-        <div class="span-18 prepend-6" id="main_navigation">
-           <lift:Menu.builder li:class="" li_item:class="selected" ul:class=""/>
+        <div class="span-19 prepend-5" id="main_navigation">
+           <lift:Menu.builder li:class="" li_item:id="selected" ul:class=""/>
         </div>
-        <div class="span-6" id="navigation">
-           <lift:Menu.builder li:class="" li_item:class="selected" ul:class=""/>
+        <div class="span-5" id="navigation">
+           <lift:Menu.builder li:class="" li_item:id="selected" ul:class=""/>
         </div>
-        <div class="span-18 last" id="main_content">
+        <div class="span-19 last" id="main_content">
            <h1>main content</h1>
         </div>
-        <div class="span-6" id="date_time">
-           <h3>today's date</h3>
+        <div class="span-5" id="date_time">
+           <div class="lift:Helpers.currentDate">
+               <span id="current_date">Here goes the date</span>
+           </div>
         </div>
-        <div class="span-18 last" id="footer">
+        <div class="span-19 last" id="footer">
            <ul>
 	      <lift:Menu.group group="footer">
 	         <li><menu:bind /></li>
